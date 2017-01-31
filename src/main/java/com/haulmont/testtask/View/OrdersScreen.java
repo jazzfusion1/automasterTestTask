@@ -129,7 +129,7 @@ public class OrdersScreen extends AbstractScreen {
                 if (MValidator.getEndWorkDate() != null & MValidator.getCreateDate() != null)
                     if (MValidator.getEndWorkDate().getTime() < MValidator.getCreateDate().getTime()) {
                         throw new Validator.InvalidValueException(
-                                "Дата завершения не может быть больше даты создания заказа");
+                                "Дата создания не может быть больше даты завершения заказа");
                     }
             });
             binder.setValidateAllProperties(true);
